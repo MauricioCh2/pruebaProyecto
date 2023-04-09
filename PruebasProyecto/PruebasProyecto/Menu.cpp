@@ -35,11 +35,10 @@ bool Menu::llamarMenus() {
 		opMenuCliente(opE);
 		break;
 	case 2:
-		cout << "Hola mundo";
-		throw new string("opcion aun en desarrollo, hola");
+		throw new string("opcion aun en desarrollo");
 		break;
 	case 3:
-		throw new string("opcion aun en desarrollo xdxd");
+		throw new string("opcion aun en desarrollo");
 
 		break;
 	case 4:
