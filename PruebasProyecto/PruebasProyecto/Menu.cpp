@@ -38,7 +38,7 @@ bool Menu::llamarMenus() {
 		throw new string("opcion aun en desarrollo, xdxdxdxd");
 		break;
 	case 3:
-		throw new string("opcion aun en desarrollo");
+		throw new string("opcion aun en desarrollo xdxd");
 
 		break;
 	case 4:
