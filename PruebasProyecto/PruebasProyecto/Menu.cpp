@@ -94,7 +94,7 @@ bool Menu::opMenuCliente(int opC) {
 		cedula = recivirString();
 		imprimirString("Telefono: ");
 		nombre = recivirString();
-		imprimirString("fechaNa: ");
+		imprimirString("Fecha nacimiento: ");
 		fechaNa = recivirString();
 		//esto podrian ser vectores
 		imprimirString("Sexo: ");
@@ -104,9 +104,10 @@ bool Menu::opMenuCliente(int opC) {
 		imprimirString("Peso: ");
 		peso = recivirDouble();
 		imprimirString("Porcentaje de grasa corporal: ");
-		PMC = recivirDouble();
+		PGC = recivirDouble();
 		imprimirString("Porcentaje masa corporal: ");
 		PMC = recivirDouble();
+		//Cliente(cedula,nombre, fechaNA, sexo, estatura, peso, PGC, PMC)
 		//luegoesto se debe ir a la lista obviamente
 		enter();
 		limpiarPantalla();
