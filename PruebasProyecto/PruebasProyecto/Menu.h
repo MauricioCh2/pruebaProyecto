@@ -28,12 +28,14 @@ Nada de esto es necesario pero para llevar un orden y que se vea coquete no esta
 #include <sstream>
 
 #include "Utilities.h"
+#include "Gym.h"
 //#include "Archivos.h"
 using namespace std;
 
 class Menu {
 private:
 	int _fecha[3];
+	Gym* _gym;
 public:
 	//Inicio------------------------------------------------------------
 	void inicio();

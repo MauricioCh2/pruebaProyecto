@@ -97,6 +97,8 @@ bool Menu::opMenuCliente(int opC) {
 	double peso = 0.0;
 	double PGC = 0.0;
 	double PMC = 0.0;
+	//clientes (esto puede variar)
+	//Deportista* cliente;
 	//esto debe incluir la fecha de registro de los datos
 	// no se si en general del cliente o solo del triatonista
 	switch (opC) {
@@ -123,6 +125,7 @@ bool Menu::opMenuCliente(int opC) {
 		PMC = recivirDouble();
 		//cliente*= new Cliente(cedula,nombre, fechaNA, sexo, estatura, peso, PGC, PMC)
 		//luegoesto se debe ir a la lista obviamente
+		//gym->ingresarListaClientes(cliente);
 		enter();
 		limpiarPantalla();
 		return true;
@@ -178,7 +181,8 @@ bool Menu::opMenuCursos(int op ) {
 	string fecha;
 	string horario;
 	int cupMax;
-	//Clientes* cliente;
+	//Deportista* cliente;
+	//Curso* curso;
 	switch (op) {
 	case 1: //nuevo curso
 		imprimirString("Ingreso de datos del cliente: ");
@@ -195,6 +199,7 @@ bool Menu::opMenuCursos(int op ) {
 		//curso*= new Curso(nombre, descripcion, fecha, horario, cupMax, NULL);
 		// ese null seria la liusta de clientes pero creo que iria a null ya que aun no se le asgnaria nada 
 		//luegoesto se debe ir a la lista obviamente
+		// gym->ingresarListaCursos(curso);
 		enter();
 		limpiarPantalla();
 		break;
