@@ -5,7 +5,7 @@ private:
 	char _sexo;
 	double _estatura;
 public:
-	Corredor(Deportista*);
+	Corredor(Deportista*,char,double);
 	virtual ~Corredor();
 	virtual string tostring();
 };

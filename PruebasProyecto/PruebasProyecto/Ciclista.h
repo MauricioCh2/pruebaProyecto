@@ -5,7 +5,7 @@ private:
 	int _horasEntrenam;
 	double _temPromedio;
 public:
-	Ciclista(Deportista*);
+	Ciclista(Deportista*, int, double);
 	virtual ~Ciclista();
 	virtual string tostring();
 };

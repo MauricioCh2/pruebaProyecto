@@ -1,5 +1,7 @@
 #include "Triatlonista.h"
 Triatlonista::Triatlonista(int partIron, int triaGan) {
+	this->_cantPartIronMan = partIron;
+	this->_cantTriatGanador = triaGan;
 
 }
 Triatlonista:: ~Triatlonista() {

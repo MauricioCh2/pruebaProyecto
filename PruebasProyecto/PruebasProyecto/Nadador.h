@@ -6,7 +6,7 @@ private:
 	double _peso;
 	double _IMC;
 private:
-	Nadador(Deportista*);
+	Nadador(Deportista*,double,double,double);
 	virtual ~Nadador();
 	virtual string tostring();
 };
