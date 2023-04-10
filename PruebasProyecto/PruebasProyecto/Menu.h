@@ -35,25 +35,26 @@ class Menu {
 private:
 	int _fecha[3];
 public:
-	//Inicio---------------------------
+	//Inicio------------------------------------------------------------
 	void inicio();
 	bool llamarMenus();
 	string menuPrincipal();
-	//clientes---------------------
+	//clientes----------------------------------------------------------
 	string menuCliente();
 	bool opMenuCliente(int);
-	//Pagos------------------------
+	//Pagos-------------------------------------------------------------
 	string menuPagos();
 	bool opMenuPAgos(int);
-
-	//Reporte gnerales-------------
+	//Cursos------------------------------------------------------------
+	string menuCursos();
+	bool opMenuCursos(int);
+	//Reporte generales-------------------------------------------------
 	string menuReportesGenerales();
 	bool opMenuReportes(int);
-
-	//Reservaciones----------------
+	//Reservaciones-----------------------------------------------------
 	string menuReservaciones();
 	bool opMenuReservaciones(int);
 
 
-	
+
 };

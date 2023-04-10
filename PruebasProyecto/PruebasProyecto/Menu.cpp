@@ -27,30 +27,39 @@ bool Menu::llamarMenus() {
 	int opE = 0;
 
 	imprimirString(menuPrincipal());
-	op=recivirInt();
+	op = recivirInt();
 	switch (op) {
-	case 1:
+	case 1://clientes
 		imprimirString(menuCliente());
 		opE = recivirInt();
 		opMenuCliente(opE);
 		break;
-	case 2:
-		throw new string("opcion aun en desarrollo, xdxdxdxd");
+	case 2://Registro y control (verificación y reporte) de pagos
+		throw new string("opcion aun en desarrollo");
 		break;
-	case 3:
+	case 3://Reportes generales
 		throw new string("opcion aun en desarrollo");
 
 		break;
-	case 4:
+	case 4://Registro y actualizacion de cursos
+		imprimirString(menuCursos());
+		op = recivirInt();
+		opMenuCursos(op);
+
+		break;
+	case 5:// manejo de reservaciones 
 		throw new string("opcion aun en desarrollo");
 
 		break;
-	case 5:
-		throw new string("opcion aun en desarrollo");
-
+	case 6: //Salir
+		limpiarPantalla();
+		imprimirString("Buen dia...");
+		return true;
 		break;
-
+	defaut:
+		break;
 	}
+	return false;
 
 }
 string Menu::menuPrincipal() {
@@ -60,17 +69,20 @@ string Menu::menuPrincipal() {
 		<< "[2]Registro y control de pagos--------" << endl
 		<< "[3]Reportes generales-----------------" << endl
 		<< "[4]Registro y actualizacion de cursos-" << endl
-		<< "[5]Manejo de reservaciones------------" << endl;
+		<< "[5]Manejo de reservaciones------------" << endl
+		<< "[5]Salir------------------------------" << endl;
 
 	return s.str();
 }
-//clientes---------------------
+//clientes-----------------------------------------------------------------
 string Menu::menuCliente() {
 	stringstream s;
-	s << "MENU CLIENTES?" << endl
+	s << "MENU CLIENTES" << endl
 		<< "[1]Registrar Clientes-----------------" << endl
 		<< "[2]Edicion e clientes--------" << endl
-		<< "[3]Eliminar clientess-----------------" << endl;
+		<< "[3]Eliminar clientess-----------------" << endl
+		<< "[4]Cancelar---------------------------" << endl;
+
 
 	return s.str();
 }
@@ -92,9 +104,11 @@ bool Menu::opMenuCliente(int opC) {
 		imprimirString("Ingreso de datos del cliente: ");
 		imprimirString("Cedula: ");
 		cedula = recivirString();
-		imprimirString("Telefono: ");
+		imprimirString("Nombre: ");
 		nombre = recivirString();
-		imprimirString("fechaNa: ");
+		imprimirString("Telefono: ");
+		telefono = recivirString();
+		imprimirString("Fecha nacimiento: ");
 		fechaNa = recivirString();
 		//esto podrian ser vectores
 		imprimirString("Sexo: ");
@@ -104,9 +118,10 @@ bool Menu::opMenuCliente(int opC) {
 		imprimirString("Peso: ");
 		peso = recivirDouble();
 		imprimirString("Porcentaje de grasa corporal: ");
-		PMC = recivirDouble();
+		PGC = recivirDouble();
 		imprimirString("Porcentaje masa corporal: ");
 		PMC = recivirDouble();
+		//cliente*= new Cliente(cedula,nombre, fechaNA, sexo, estatura, peso, PGC, PMC)
 		//luegoesto se debe ir a la lista obviamente
 		enter();
 		limpiarPantalla();
@@ -118,16 +133,20 @@ bool Menu::opMenuCliente(int opC) {
 	case 3:
 
 		break;
+	case 4:
+		limpiarPantalla();
+		return true;
+		break;
 	default:
 		return false;
 		break;
 	}
-	
+
 
 	imprimirString("Datos ingresados correctamente ");
 	return true;
 }
-//Pagos------------------------
+//Pagos-----------------------------------------------------------------
 string Menu::menuPagos() {
 	return "";
 }
@@ -135,7 +154,7 @@ bool Menu::opMenuPAgos(int) {
 	return false;
 }
 
-//Reporte gnerales-------------
+//Reporte generales------------------------------------------------------
 string Menu::menuReportesGenerales() {
 
 	return "";
@@ -143,8 +162,60 @@ string Menu::menuReportesGenerales() {
 bool Menu::opMenuReportes(int) {
 	return false;
 }
+//Registro y actualizacion de cursos-------------------------------------
+string Menu::menuCursos() {
+	stringstream s;
+	s << "MENU CURSOS" << endl
+		<< "[1]Nuevo curso------------------------" << endl
+		<< "[2]Edicion de cursos------------------" << endl
+		<< "[3]Eliminar curso---------------------" << endl
+		<< "[4]Cancelar---------------------------" << endl;
+	return s.str();
+}
+bool Menu::opMenuCursos(int op) {
+	string nombre;
+	string descripcion;
+	string fecha;
+	string horario;
+	int cupMax;
+	//Clientes* cliente;
+	switch (op) {
+	case 1: //nuevo curso
+		imprimirString("Ingreso de datos del cliente: ");
+		imprimirString("nombre: ");
+		nombre = recivirString();
+		imprimirString("Descripcon del curso: ");
+		descripcion = recivirString();
+		imprimirString("Fecha: ");
+		fecha = recivirString();
+		imprimirString("Horario: ");
+		horario = recivirString();
+		imprimirString("Peso: ");
+		cupMax = recivirInt();
+		//curso*= new Curso(nombre, descripcion, fecha, horario, cupMax, NULL);
+		// ese null seria la liusta de clientes pero creo que iria a null ya que aun no se le asgnaria nada 
+		//luegoesto se debe ir a la lista obviamente
+		enter();
+		limpiarPantalla();
+		break;
+	case 2:// edicion de cursos
 
-//Reservaciones----------------
+		break;
+	case 3://eliminar curso 
+
+		break;
+	case 4://cancelar
+		limpiarPantalla();
+		return true;
+		break;
+	defaul:
+
+		break;
+
+	}
+	return false;
+}
+//Reservaciones----------------------------------------------------------
 string Menu::menuReservaciones() {
 	return "";
 
