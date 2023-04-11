@@ -3,8 +3,13 @@
 #include <string>
 #include <sstream>
 //esta va a ser la que tenga las listas de todo 
+//#include "Deportista.h"
+#include "Ciclista.h"
+#include "Corredor.h"
+#include "Decorate.h"
 #include "Deportista.h"
-
+#include "Nadador.h"
+#include "Triatlonista.h"
 class Gym {
 	//sera que guardamos la fecha aqui?, se lo podriamos pasar por parametros y todo 
 	

@@ -5,7 +5,8 @@ private:
 	int _cantPartIronMan;
 	int _cantTriatGanador;
 public:
-	Triatlonista(int, int);
+	Triatlonista(string, string, string, string, int, int);
+	//el ultimo string es provicional, este deberia ser del tipo fecha 
 	virtual ~Triatlonista();
 	virtual string toString();
 };
