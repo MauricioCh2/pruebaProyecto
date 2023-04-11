@@ -131,6 +131,7 @@
     <ClInclude Include="Corredor.h" />
     <ClInclude Include="Decorate.h" />
     <ClInclude Include="Deportista.h" />
+    <ClInclude Include="Fecha.h" />
     <ClInclude Include="Gym.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Nadador.h" />
@@ -140,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Ciclista.cpp" />
     <ClCompile Include="Corredor.cpp" />
+    <ClCompile Include="Fecha.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Nadador.cpp" />

@@ -55,6 +55,8 @@ bool Menu::llamarMenus() {
 		limpiarPantalla();
 		imprimirString("Buen dia...");
 		return true;
+		//Completar Archivos al 100%
+		//Y despues "delete()" cuando ya leyo y gurado TODO
 		break;
 	defaut: 
 		break;
@@ -142,13 +144,16 @@ bool Menu::opMenuCliente(int opC) {
 		temProm = recivirDouble();
 		imprimirString("Cantidad de triatlones ganados");
 		canTriaGanados = recivirDouble();
+
+		//Hacer Decorados, despues Agregar en Trialonita
+		//(Nota: (Deportista(ABS)==UpCasting)
+
 		cliente = new Triatlonista(cedula,nombre,telefono, fechaNa,cantPartiEnIronMan,canTriaGanados);
 		//cliente = new Ciclista(cliente,horasEntrenem, temProm);
 		//luegoesto se debe ir a la lista obviamente
 		//gym->ingresarListaClientes(cliente);
 		enter();
 		limpiarPantalla();
-		return true;
 		break;
 	case 2:
 
@@ -167,7 +172,7 @@ bool Menu::opMenuCliente(int opC) {
 	
 
 	imprimirString("Datos ingresados correctamente ");
-	return true;
+	return false;
 }
 //Pagos-----------------------------------------------------------------
 string Menu::menuPagos() {
@@ -205,7 +210,7 @@ bool Menu::opMenuCursos(int op ) {
 	//Curso* curso;
 	switch (op) {
 	case 1: //nuevo curso
-		imprimirString("Ingreso de datos del cliente: ");
+		imprimirString("Ingreso de datos del curso: ");
 		imprimirString("nombre: ");
 		nombre = recivirString();
 		imprimirString("Descripcon del curso: ");

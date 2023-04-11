@@ -39,7 +39,7 @@ double recivirDouble() {
 }
 //IMPRIMIR---------------------
 void imprimirString(string s) {
-	cout << s << endl;;
+	cout << s << endl;
 }
 void imprimirInt(int i) {
 	cout << i << endl;
