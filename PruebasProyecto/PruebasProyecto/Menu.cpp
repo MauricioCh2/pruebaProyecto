@@ -97,8 +97,15 @@ bool Menu::opMenuCliente(int opC) {
 	double peso = 0.0;
 	double PGC = 0.0;
 	double PMC = 0.0;
+	//Ciclista
+	int horasEntrenem = 0;
+	double temProm = 0;
+	//triatlonista
+	int cantPartiEnIronMan = 0;
+	int canTriaGanados = 0;
 	//clientes (esto puede variar)
-	//Deportista* cliente;
+	Deportista* cliente = NULL;
+
 	//esto debe incluir la fecha de registro de los datos
 	// no se si en general del cliente o solo del triatonista
 	switch (opC) {
@@ -123,7 +130,20 @@ bool Menu::opMenuCliente(int opC) {
 		PGC = recivirDouble();
 		imprimirString("Porcentaje masa corporal: ");
 		PMC = recivirDouble();
-		//cliente*= new Cliente(cedula,nombre, fechaNA, sexo, estatura, peso, PGC, PMC)
+		imprimirString("Horas de entrenamiento: ");
+		PGC = recivirDouble();
+		imprimirString("Porcentaje masa corporal: ");
+		PMC = recivirDouble();
+		imprimirString("Cantidad de horas de entrenamiento:");
+		canTriaGanados = recivirDouble();
+		imprimirString("Cantidad de triatlones ganados:");
+		horasEntrenem = recivirDouble();
+		imprimirString("no se que es temPromedio, pero eso: ");
+		temProm = recivirDouble();
+		imprimirString("Cantidad de triatlones ganados");
+		canTriaGanados = recivirDouble();
+		cliente = new Triatlonista(cedula,nombre,telefono, fechaNa,cantPartiEnIronMan,canTriaGanados);
+		//cliente = new Ciclista(cliente,horasEntrenem, temProm);
 		//luegoesto se debe ir a la lista obviamente
 		//gym->ingresarListaClientes(cliente);
 		enter();

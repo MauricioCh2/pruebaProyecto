@@ -1,8 +1,10 @@
 #include "Triatlonista.h"
-Triatlonista::Triatlonista(int partIron, int triaGan) {
+Triatlonista::Triatlonista(string ced, string nom, string tel, string f, int partIron, int triaGan) {
 	this->_cantPartIronMan = partIron;
 	this->_cantTriatGanador = triaGan;
-
+	this->ptrCedula = ced;
+	this->ptrNombre = nom;
+	this->ptrFecha = f;
 }
 Triatlonista:: ~Triatlonista() {
 
