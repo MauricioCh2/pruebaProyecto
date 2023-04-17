@@ -10,7 +10,9 @@ Nadador:: ~Nadador() {
 }
 string Nadador::tostring() {
 	stringstream s;
-	s << this->_deportista->toString() << endl;
+	if (_deportista != NULL) {
+		s << this->_deportista->toString() << endl;
+	}
 	s << "\t\t" << this->_IMC << endl;
 	s << "\t\t" << this->_masaMuscular << endl;
 	s << "\t\t" << this->_peso << endl;

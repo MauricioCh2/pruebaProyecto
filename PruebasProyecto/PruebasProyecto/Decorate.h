@@ -4,9 +4,15 @@ class Decorate: public Deportista {
 protected:
 	Deportista* _deportista;
 public: 
-	virtual string toString() = 0;
-	virtual void Prueba() {
-		cout << "a";
-	}
+	string toString();
+    void setNombre(string);
+    string getNombre();
+	void setCedula(string);
+	string getCedula();
+	void setTelefono(string);
+	string getTelefono();
+
+    Deportista* getPtrProx();
+    void setPtrProx(Deportista*);
 
 };

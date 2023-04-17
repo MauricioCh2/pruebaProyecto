@@ -9,7 +9,9 @@ Corredor:: ~Corredor() {
 }
 string Corredor::tostring() {
 	stringstream s;
-	s << this->_deportista->toString() << endl;
+	if (_deportista != NULL) {
+		s << this->_deportista->toString() << endl;
+	}
 	s << "\t\t" << this->_sexo << endl;
 	s << "\t\t" << this->_estatura << endl;
 	return s.str();

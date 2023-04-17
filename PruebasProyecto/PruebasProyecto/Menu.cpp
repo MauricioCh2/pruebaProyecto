@@ -49,7 +49,7 @@ bool Menu::llamarMenus() {
 		//Completar Archivos al 100%
 		//Y despues "delete()" cuando ya leyo y gurado TODO
 		break;
-	defaut: 
+	default: 
 		break;
 	}
 	return false;
@@ -139,7 +139,8 @@ bool Menu::opMenuCliente(int opC) {
 		//Hacer Decorados, despues Agregar en Trialonita
 		//(Nota: (Deportista(ABS)==UpCasting)
 
-		cliente = new Triatlonista(cedula,nombre,telefono, fechaNa,cantPartiEnIronMan,canTriaGanados);
+		//OJO que se nececita hacer el decorate 
+		cliente = new Triatlonista(NULL,cedula,nombre,telefono,cantPartiEnIronMan,canTriaGanados);
 		//cliente = new Ciclista(cliente,horasEntrenem, temProm);
 		//luegoesto se debe ir a la lista obviamente
 		//gym->ingresarListaClientes(cliente);

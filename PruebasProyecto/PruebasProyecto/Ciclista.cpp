@@ -9,7 +9,9 @@ Ciclista:: ~Ciclista() {
 }
 string Ciclista::tostring() {
 	stringstream s;
-	s << this->_deportista->toString() << endl;
+	if (_deportista != NULL) {
+		s << this->_deportista->toString() << endl;
+	}
 	s << "\t\t" << this->_horasEntrenam << endl;
 	s << "\t\t" << this->_temPromedio << endl;
 	return s.str();
