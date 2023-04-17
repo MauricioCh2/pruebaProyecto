@@ -2,9 +2,9 @@
 Triatlonista::Triatlonista(Deportista* ptrdec, string ced, string nom, string tel, int partIron, int triaGan) {
 	this->_cantPartIronMan = partIron;
 	this->_cantTriatGanador = triaGan;
-	getDeportista()->setNombre(nom);
-	getDeportista()->setCedula(nom);
-	getDeportista()->setTelefono(tel);
+	dec->setNombre(nom);
+	dec->setCedula(nom);
+	dec->setTelefono(tel);
 	//this->fech = f;
 	this->dec = ptrdec;
 }
@@ -27,12 +27,13 @@ string Triatlonista::toString() {
 
 Deportista* Triatlonista::getDeportista()
 {
-	return dec;
+	throw new string("ruta erronea pa");
+	return NULL;
 }
 
 void Triatlonista::setDeportista(Deportista* d)
 {
-	dec = d;
+	throw new string("ruta erronea pa");
 }
 
 //Fecha* Triatlonista::getFecha()
