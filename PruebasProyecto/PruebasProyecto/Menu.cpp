@@ -1,21 +1,12 @@
 #include "Menu.h"
 void Menu::inicio() {
-	int dia = 0;
-	int mes = 0;
-	int annio = 0;
+	
 	bool fin = false;
 	imprimirString("Bienvenido al GYM de triatlon");
 
 	imprimirString("Digite la Fecha en formato dia/mes/annio");
-	dia = recivirInt();
-	mes = recivirInt();
-	annio = recivirInt();
-	//esto se podria hacer esteticamente mas bonito pero habria qua gregar una validaciones 
-	//no hace falta, pero seria para que el usuario escriba 01/03/2021, se recoora el string, se separe en 
-	//varios auxiliares y se guarde en cada variable (o al menos a mi se me ocurre asi)
-	_fecha[0] = dia;
-	_fecha[1] = mes;
-	_fecha[2] = annio;
+	fecha = validarFecha();
+	//cout<<fecha->toString()<< "prueba ";
 	while (!fin) {
 		llamarMenus();
 	}

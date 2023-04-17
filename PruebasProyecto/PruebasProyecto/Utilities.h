@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include<sstream>
+#include "Fecha.h"
 using namespace std;
 
 //RECIVIR----------------------
@@ -16,9 +17,10 @@ void imprimirChar(char);
 void imprimirDouble(double);
 //VALIDACIONES-----------------
 	//preguuntar si cada uno de estos tiene que ir en una clase / .h y cpp separados
-int validarDia();
-int validarMes();
-int validarAnnio();
+Fecha* validarFecha();
+int validarDia(string);
+int validarMes(string);
+int validarAnnio(string);
 //podriamos hacer uno para guardar e imprimir vectores pero no se si sera util asi qu de momnto no
 //Otros
 void enter();

@@ -44,8 +44,6 @@ void Fecha::setAno(int a)
 string Fecha::toString()
 {
 	stringstream s;
-	s << "Dia:" << dia << endl;
-	s << "Mes:" << mes << endl;
-	s << "Ano:" << ano << endl;
+	s << dia << "/" << mes << "/" << ano  << endl;
 	return s.str();
 }

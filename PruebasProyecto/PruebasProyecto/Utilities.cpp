@@ -51,10 +51,30 @@ void imprimirDouble(double d) {
 	cout << d << endl;
 }
 //VALIDACIONES-----------------
-int validarDia() {
+Fecha* validarFecha() {
+
+	string leer = recivirString();
+	stringstream input_stringstream(leer);
+	string dia = "";
+	string mes = "";
+	string annio = "";
+	int d, m, a;
+	getline(input_stringstream, dia, '/');
+	getline(input_stringstream, mes, '/');
+	getline(input_stringstream, annio, '/');
+	d = validarDia(dia);
+	m = validarMes(mes);
+	a = validarAnnio(annio);
+	Fecha* fech = new Fecha(d,m,a);
+	return fech;
+
+
+}
+
+int validarDia(string s) {
 	int d;
 	while (true) {
-		 d = recivirInt();
+		 d = stoi(s);
 		if (d >= 1 && d <= 31) {
 			return d;
 		}
@@ -65,10 +85,10 @@ int validarDia() {
 	return 0;
 
 }
-int validarMes() {
+int validarMes(string s) {
 	int m;
 	while (true) {
-		m = recivirInt();
+		m = stoi(s);
 		if (m >= 1 && m <= 12) {
 			return m;
 		}
@@ -78,10 +98,10 @@ int validarMes() {
 	}
 	return 0;
 }
-int validarAnnio() {
+int validarAnnio(string s) {
 	int a;
 	while (true) {
-		a = recivirInt();
+		a = stoi(s);
 		if (a >= 1 && a <= 31) {
 			return a;
 		}

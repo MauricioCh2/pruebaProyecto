@@ -35,7 +35,7 @@ using namespace std;
 
 class Menu {
 private:
-	int _fecha[3];
+	Fecha* fecha;
 	Gym* _gym;
 public:
 	//Inicio------------------------------------------------------------
