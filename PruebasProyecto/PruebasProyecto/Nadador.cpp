@@ -8,7 +8,7 @@ Nadador::Nadador(Deportista* dep, double imc,double masaMuscular,double peso) {
 Nadador:: ~Nadador() {
 	if (_deportista != NULL) { delete _deportista; }
 }
-string Nadador::tostring() {
+string Nadador::toString() {
 	stringstream s;
 	if (_deportista != NULL) {
 		s << this->_deportista->toString() << endl;

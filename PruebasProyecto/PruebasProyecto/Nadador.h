@@ -8,5 +8,5 @@ private:
 private:
 	Nadador(Deportista*,double,double,double);
 	virtual ~Nadador();
-	virtual string tostring();
+	virtual string toString();
 };

@@ -7,5 +7,5 @@ private:
 public:
 	Ciclista(Deportista*, int, double);
 	virtual ~Ciclista();
-	virtual string tostring();
+	virtual string toString();
 };

@@ -7,7 +7,7 @@ Corredor::Corredor(Deportista* dep, char sex, double estatura) {
 Corredor:: ~Corredor() {
 	if (_deportista != NULL) { delete _deportista; }
 }
-string Corredor::tostring() {
+string Corredor::toString() {
 	stringstream s;
 	if (_deportista != NULL) {
 		s << this->_deportista->toString() << endl;

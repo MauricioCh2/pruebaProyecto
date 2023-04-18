@@ -7,7 +7,7 @@ Ciclista::Ciclista(Deportista* dep, int horasEntr, double tePromedio) {
 Ciclista:: ~Ciclista() {
 	if (_deportista != NULL) { delete _deportista; }
 }
-string Ciclista::tostring() {
+string Ciclista::toString() {
 	stringstream s;
 	if (_deportista != NULL) {
 		s << this->_deportista->toString() << endl;

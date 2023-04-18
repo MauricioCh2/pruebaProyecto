@@ -4,7 +4,7 @@ class Decorate: public Deportista {
 protected:
 	Deportista* _deportista;
 public: 
-	string toString();
+	virtual string toString()=0;
     void setNombre(string);
     string getNombre();
 	void setCedula(string);
@@ -12,7 +12,6 @@ public:
 	void setTelefono(string);
 	string getTelefono();
 
-    Deportista* getPtrProx();
-    void setPtrProx(Deportista*);
-
+	virtual Deportista* getPtrProx();
+	virtual void setPtrProx(Deportista*);
 };

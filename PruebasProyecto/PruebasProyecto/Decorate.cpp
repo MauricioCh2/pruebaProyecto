@@ -1,20 +1,15 @@
 #pragma once
 #include "Decorate.h"
 
-string Decorate::toString()
-{
-	return "";
-}
-
 void Decorate::setNombre(string n) {
-	Nombre = n;
+	this->Nombre = n;
 }
 string Decorate::getNombre() {
 	return Nombre;
 }
 void Decorate::setCedula(string c)
 {
-	Cedula = c;
+	this->Cedula = c;
 }
 string Decorate::getCedula()
 {
@@ -22,7 +17,7 @@ string Decorate::getCedula()
 }
 void Decorate::setTelefono(string t)
 {
-	Telefono = t;
+	this->Telefono = t;
 }
 string Decorate::getTelefono()
 {
@@ -32,5 +27,5 @@ Deportista* Decorate::getPtrProx() {
 	return _deportista;
 }
 void Decorate::setPtrProx(Deportista* dep) {
-	_deportista = dep;
+	this->_deportista = dep;
 }

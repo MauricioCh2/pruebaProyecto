@@ -7,5 +7,5 @@ private:
 public:
 	Corredor(Deportista*,char,double);
 	virtual ~Corredor();
-	virtual string tostring();
+	virtual string toString();
 };

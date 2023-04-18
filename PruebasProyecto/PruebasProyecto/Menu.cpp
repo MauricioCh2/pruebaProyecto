@@ -230,9 +230,7 @@ bool Menu::opMenuCursos(int op ) {
 		limpiarPantalla();
 		return true;
 		break;
-	defaul: 
-
-		break;
+	default: break;
 
 	}
 	return false;
