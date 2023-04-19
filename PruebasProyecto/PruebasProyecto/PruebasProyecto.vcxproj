@@ -127,13 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Menu.h" />
-    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Ciclista.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Corredor.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Deportista.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Fecha.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Gym.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Menu.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Nadador.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Triatlonista.h" />
+    <ClInclude Include="..\..\..\..\..\..\mierda\Utilities.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Ciclista.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Corredor.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Deportista.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Fecha.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Main.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Menu.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Nadador.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Triatlonista.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\mierda\Utilities.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
